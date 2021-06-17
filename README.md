@@ -10,7 +10,7 @@ Deployed Application (optional): [Student Store Deployed Site](ADD_LINK_HERE)
 
 #### REQUIRED FEATURES
 
-- [ ] The API should contain an endpoint that serves an array of all products in the store
+- [x] The API should contain an endpoint that serves an array of all products in the store
 - [ ] An endpoint should exist for creating orders and saving them to a JSON file. Each order should contain the email of the person placing the order, the items associated with the order, and the quantity of each item purchased.
 - [ ] A Store model should handle all data management logic for the API and be the interface for read/write operations to the JSON file.
 - [ ] The frontend should include a landing page that displays the products available for purchase.
@@ -20,7 +20,7 @@ Deployed Application (optional): [Student Store Deployed Site](ADD_LINK_HERE)
 
 #### STRETCH FEATURES
 
-- [ ] Deploy your website with Heroku & Surge. 
+- [ ] Deploy your website with Heroku & Surge.
 - [ ] Create an endpoint for fetching all orders in the database, and an endpoint for serving an individual order based on its id.
 - [ ] Create an endpoint that serves only a single product based on the product's id
 - [ ] Build a page in the UI that displays the list of all past orders and lets the user click on any individual order to take them to a more detailed page of the transaction.
@@ -34,15 +34,15 @@ Deployed Application (optional): [Student Store Deployed Site](ADD_LINK_HERE)
 
 ### Reflection
 
-* Did the topics discussed in your labs prepare you to complete the assignment? Be specific, which features in your weekly assignment did you feel unprepared to complete?
+- Did the topics discussed in your labs prepare you to complete the assignment? Be specific, which features in your weekly assignment did you feel unprepared to complete?
 
 Add your response here
 
-* If you had more time, what would you have done differently? Would you have added additional features? Changed the way your project responded to a particular event, etc.
-  
+- If you had more time, what would you have done differently? Would you have added additional features? Changed the way your project responded to a particular event, etc.
+
 Add your response here
 
-* Reflect on your project demo, what went well? Were there things that maybe didn't go as planned? Did you notice something that your peer did that you would like to try next time?
+- Reflect on your project demo, what went well? Were there things that maybe didn't go as planned? Did you notice something that your peer did that you would like to try next time?
 
 Add your response here
 
