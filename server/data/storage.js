@@ -10,7 +10,7 @@ class Storage {
 	async setup() {
 		const adapter = new FileSync(this.path);
 		this.db = lowdb(adapter);
-		this.db.defaults({ products: [] }).write();
+		this.db.defaults({ orders: [], users: [], products: [] }).write();
 	}
 
 	get(key) {
