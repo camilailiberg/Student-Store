@@ -12,17 +12,6 @@ router.get("/products", async (req, res, next) => {
 		next(err);
 	}
 });
-
-// get list of users
-router.get("/users", async (req, res, next) => {
-	try {
-		const users = await StudentStore.listUsers();
-		res.status(200).json({ users });
-	} catch (err) {
-		next(err);
-	}
-});
-
 // get one product
 router.get("/products/:productId", async (req, res, next) => {
 	try {
@@ -37,6 +26,15 @@ router.get("/products/:productId", async (req, res, next) => {
 	}
 });
 
+// get list of users
+router.get("/users", async (req, res, next) => {
+	try {
+		const users = await StudentStore.listUsers();
+		res.status(200).json({ users });
+	} catch (err) {
+		next(err);
+	}
+});
 // get one user
 router.get("/users/:userId", async (req, res, next) => {
 	try {
@@ -50,7 +48,6 @@ router.get("/users/:userId", async (req, res, next) => {
 		next(err);
 	}
 });
-
 // create a new user
 router.post("/users", async (req, res, next) => {
 	try {
@@ -65,15 +62,38 @@ router.post("/users", async (req, res, next) => {
 	}
 });
 
-// // create new order
-// router.post("/order", async (req, res, next) => {
-// 	try {
-// 		const transaction = req.body.transaction;
-// 		const newTransaction = await Bank.recordTransaction(transaction);
-// 		res.status(201).json({ transaction: newTransaction });
-// 	} catch (err) {
-// 		next(err);
-// 	}
-// });
+// get list of orders
+router.get("/orders", async (req, res, next) => {
+	try {
+		const orders = await StudentStore.listOrders();
+		res.status(200).json({ orders });
+	} catch (err) {
+		next(err);
+	}
+});
+// get one user
+router.get("/orders/:orderId", async (req, res, next) => {
+	try {
+		const orderId = req.params.orderId;
+		const order = await StudentStore.fetchOrderById(orderId);
+		if (!order) {
+			throw new NotFoundError("Orderot found");
+		}
+		res.status(200).json({ order });
+	} catch (err) {
+		next(err);
+	}
+});
+// create a new order
+router.post("/create-order", async (req, res, next) => {
+	try {
+		const order = req.body.order;
+		console.log(req.body.order);
+		const newOrder = await StudentStore.createOrder(order);
+		res.status(201).json({ order: { newOrder } });
+	} catch (err) {
+		next(err);
+	}
+});
 
 module.exports = router;

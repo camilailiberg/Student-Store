@@ -8,23 +8,7 @@ class StudentStore {
 		console.log(products);
 		return products;
 	}
-
-	static async listUsers() {
-		// list all users in the users array
-		const users = storage.get("users").value();
-		return users;
-	}
-
-	static async fetchUserById(userId) {
-		// fetch a single user
-		const user = storage
-			.get("users")
-			.find({ id: Number(userId) })
-			.value();
-		return user;
-	}
-
-	// fetch a single user
+	// fetch a single product
 	static async fetchProductById(productId) {
 		const product = storage
 			.get("products")
@@ -33,6 +17,19 @@ class StudentStore {
 		return product;
 	}
 
+	static async listUsers() {
+		// list all users in the users array
+		const users = storage.get("users").value();
+		return users;
+	}
+	static async fetchUserById(userId) {
+		// fetch a single user
+		const user = storage
+			.get("users")
+			.find({ id: Number(userId) })
+			.value();
+		return user;
+	}
 	// create a new user
 	static async createUser(user) {
 		if (!user) {
@@ -51,10 +48,45 @@ class StudentStore {
 
 		const newUser = { id: userId, createdAt, shoppingCart: [], ...user };
 
-		console.log(newUser);
 		storage.get("users").push(newUser).write();
 
 		return newUser;
+	}
+
+	// list all orders in the orders array
+	static async listOrders() {
+		const orders = storage.get("orders").orderBy("createdAt", "desc");
+		return orders;
+	}
+	// fetch a single order
+	static async fetchOrderById(orderId) {
+		const order = storage
+			.get("orders")
+			.find({ id: Number(orderId) })
+			.value();
+		return order;
+	}
+	// create a new order
+	static async createOrder(order) {
+		if (!order) {
+			throw new BadRequestError(`No order sent.`);
+		}
+		const requiredFields = ["productsBought", "email"];
+		requiredFields.forEach((field) => {
+			if (!order[field] && user[field] !== 0) {
+				throw new BadRequestError(`Field: "${field}" is required in user`);
+			}
+		});
+
+		const orders = await StudentStore.listOrders();
+		const orderId = orders.length + 1;
+		const createdAt = new Date().toISOString();
+
+		const newOrder = { id: orderId, ...order, createdAt };
+
+		storage.get("orders").push(newOrder).write();
+
+		return newOrder;
 	}
 }
 
