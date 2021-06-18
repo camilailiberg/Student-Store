@@ -50,7 +50,11 @@ I also would have added the form, shopping cart functionality and add-to-shoppin
 
 - Reflect on your project demo, what went well? Were there things that maybe didn't go as planned? Did you notice something that your peer did that you would like to try next time?
 
-Add your response here
+What went well is the fact that I was able to do all core features and also implement an extra feature that I created which was to add categories in the navbar so that the user could browse by category. I also was able to implement a few of the extra features that had to do with the backend, which I was really happy about because it helped me understand backend better.
+
+There was nothing that didn't go as planned.
+
+I liked Robet's styling of his website and that he added an about me page, which I though was a great idea and I would have added it if I had more time.
 
 ### Open-source libraries used
 
