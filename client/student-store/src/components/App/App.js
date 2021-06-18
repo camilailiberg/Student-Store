@@ -41,6 +41,10 @@ function App() {
 						path="/student-store/products/:productId"
 						element={<Product />}
 					/>
+					{/* <Route
+						path="/student-store/products/:productCategory"
+						element={<SpecificProduct />}
+					/> */}
 				</Routes>
 			</BrowserRouter>
 		</div>
