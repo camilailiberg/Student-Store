@@ -9,8 +9,26 @@
 	margin: 20px;
 }
 
+.title {
+	display: flex;
+	align-items: baseline;
+	margin-bottom: 50px;
+}
+
+.cart-icon {
+	margin-left: 20px;
+	font-size: 2rem;
+	background: none;
+}
+
 .bottom-content {
 	text-align: center;
 	bottom: 0;
 	flex: 1;
+}
+
+.payment-icons {
+	display: flex;
+	justify-content: space-between;
+	font-size: 2rem;
 }

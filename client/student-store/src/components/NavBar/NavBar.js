@@ -42,7 +42,7 @@ export default function Navbar() {
 			<IconContext.Provider value={{ color: "#fff" }}>
 				<div className="navbar">
 					<Link to="#" className="menu-bars">
-						<FaIcons.FaBars onClick={showSidebar} />
+						<FaIcons.FaShoppingCart onClick={showSidebar} />
 					</Link>
 					<div class="categories">
 						<Link to="/student-store" className="menu-bars">

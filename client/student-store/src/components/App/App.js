@@ -1,7 +1,6 @@
 import "./App.css";
 import NavBar from "../NavBar/NavBar";
 import Home from "../Home/Home";
-import Food from "../Food/Food";
 import Product from "../Product/Product";
 import { useState, useEffect } from "react";
 import axios from "axios";
@@ -34,10 +33,6 @@ function App() {
 				<NavBar />
 				<Routes>
 					<Route path="/student-store" element={<Home products={products} />} />
-					<Route
-						path="/student-store/food"
-						element={<Food products={products} />}
-					/>
 					<Route
 						path="/student-store/products/:productId"
 						element={<Product />}
