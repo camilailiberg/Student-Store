@@ -121,3 +121,7 @@ span {
 .categories {
 	margin-right: 50px;
 }
+.categories a {
+	text-decoration: none;
+	color: white;
+}

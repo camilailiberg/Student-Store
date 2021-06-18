@@ -81,7 +81,7 @@ class StudentStore {
 		const requiredFields = ["productsBought", "email"];
 		requiredFields.forEach((field) => {
 			if (!order[field] && user[field] !== 0) {
-				throw new BadRequestError(`Field: "${field}" is required in user`);
+				throw new BadRequestError(`Field: "${field}" is required in order`);
 			}
 		});
 
