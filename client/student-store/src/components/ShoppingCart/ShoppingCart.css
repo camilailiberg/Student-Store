@@ -1,4 +1,16 @@
 .ShoppingCart .title h2 {
 	color: white;
+}
+
+.ShoppingCart {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	margin: 20px;
+}
+
+.bottom-content {
+	text-align: center;
+	bottom: 0;
+	flex: 1;
 }

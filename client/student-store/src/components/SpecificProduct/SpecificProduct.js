@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
+import "./SpecificProduct.css";
 
 const defaultImage =
 	"https://nayemdevs.com/wp-content/uploads/2020/03/default-product-image.png";

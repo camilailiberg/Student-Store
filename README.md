@@ -29,19 +29,24 @@ Deployed Application (optional): [Student Store Deployed Site](ADD_LINK_HERE)
 
 ### Walkthrough Video
 
-`TODO://` Add the embedded URL code to your animated app walkthrough below, `ADD_EMBEDDED_CODE_HERE`. Make sure the video or gif actually renders and animates when viewing this README. (🚫 Remove this paragraph after adding walkthrough video)
-
-`ADD_EMBEDDED_CODE_HERE`
+<img src="/gifts/Insomnia_Products.gif" width=250><br>
+<img src="/gifts/Insomnia_Users.gif" width=250><br>
+<img src="/gifts/Insomnia_Orders.gif" width=250><br>
+<img src="/gifts/Student_Store_Demo.gif" width=250><br>
 
 ### Reflection
 
 - Did the topics discussed in your labs prepare you to complete the assignment? Be specific, which features in your weekly assignment did you feel unprepared to complete?
 
-Add your response here
+Yes, the topics discussed in the labs prepared me to do the assignment, specially lasts lab videos.
+
+Once the core requirement were reduced I felt confident to complete all the core features.
 
 - If you had more time, what would you have done differently? Would you have added additional features? Changed the way your project responded to a particular event, etc.
 
-Add your response here
+If I had had more time I would have worked more on the looks of the website and dedicate more time to the CSS.
+
+I also would have added the form, shopping cart functionality and add-to-shopping-cart buttons, and I would have also added the feature for seeing orders and filtering them.
 
 - Reflect on your project demo, what went well? Were there things that maybe didn't go as planned? Did you notice something that your peer did that you would like to try next time?
 
@@ -53,4 +58,10 @@ Add your response here
 
 ### Shout out
 
-Give a shout out to somebody from your cohort that especially helped you during your project. This can be a fellow peer, instructor, TA, mentor, etc.
+Shout out to Robert and Ashani for making Friday fun!
+
+Also shout out to Sharon and Gevork for caring so much about us as a group when we were placed togheter!
+
+In addition, shout out to all the TAs for the lectures and help.
+
+A special shout out to Matt for doing the extra lecture! It really helped me understand React A LOT better, and I probably would have struggle a lot more doing the assignment if I Matt wouldn't have done that extra lecture, so thank you! Also shout out to Matt for being a great CodePath Mentor!
