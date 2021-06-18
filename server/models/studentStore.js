@@ -5,7 +5,6 @@ class StudentStore {
 	static async listProducts() {
 		// list all items in the products array
 		const products = storage.get("products").value();
-		console.log(products);
 		return products;
 	}
 	// fetch a single product

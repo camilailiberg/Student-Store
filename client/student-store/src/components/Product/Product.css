@@ -1,0 +1,23 @@
+.product-content {
+	max-width: 600px;
+	width: 100%;
+	margin: 50px auto;
+}
+
+.product-content h1 {
+	font-size: 55px;
+	font-weight: 200;
+}
+
+.product-body {
+	min-height: 250px;
+}
+
+.post-footer {
+	height: 100px;
+	border: 100px;
+}
+
+.product-name {
+	padding: 100px;
+}

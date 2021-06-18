@@ -1,1 +1,45 @@
+.navbar {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: transparent;
+	background-color: gray;
+}
 
+.navbar .content {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 800px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.navbar .content .logo {
+	color: black;
+	font-size: 25px;
+	display: flex;
+	align-self: center;
+}
+
+.navbar .content .links {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	list-style-type: none;
+}
+
+.navbar .content .links li {
+	margin: 0 20px;
+	font-size: 18px;
+}
+
+.navbar a {
+	text-decoration: none;
+	color: black;
+}

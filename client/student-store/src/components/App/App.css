@@ -1,1 +1,9 @@
+.App {
+	background: #f6f6fe;
+	min-height: 100vh;
+	padding: 40px;
+}
 
+.App a {
+	text-decoration: none;
+}

@@ -1,26 +1,28 @@
 import "./NavBar.css";
-import Nav from "react-bootstrap/Nav";
+import { Link } from "react-router-dom";
 
 export default function NavBar() {
 	return (
-		<div className="NavBar">
-			<Nav justify variant="tabs" defaultActiveKey="/home">
-				<Nav.Item>
-					<Nav.Link href="/student-store">All Categories</Nav.Link>
-				</Nav.Item>
-				<Nav.Item>
-					<Nav.Link eventKey="link-1">Clothing</Nav.Link>
-				</Nav.Item>
-				<Nav.Item>
-					<Nav.Link eventKey="link-2">Food</Nav.Link>
-				</Nav.Item>
-				<Nav.Item>
-					<Nav.Link eventKey="link-3">Accessories</Nav.Link>
-				</Nav.Item>
-				<Nav.Item>
-					<Nav.Link eventKey="link-3">Tech</Nav.Link>
-				</Nav.Item>
-			</Nav>
+		<div className="navbar">
+			<div className="content">
+				<span className="logo">
+					<Link to="/student-store">All Categories</Link>
+				</span>
+				<ul className="links">
+					<li>
+						<Link to="/student-store/food">Food</Link>
+					</li>
+					<li>
+						<Link to="/student-store/technology">Technology</Link>
+					</li>
+					<li>
+						<Link to="/student-store/clothing">Clothing</Link>
+					</li>
+					<li>
+						<Link to="/student-store/accessories">Accessories</Link>
+					</li>
+				</ul>
+			</div>
 		</div>
 	);
 }
