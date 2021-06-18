@@ -6,6 +6,7 @@ import Product from "../Product/Product";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import SpecificProduct from "../SpecificProduct/SpecificProduct";
 
 function App() {
 	const [products, setProducts] = useState([]);
@@ -41,10 +42,10 @@ function App() {
 						path="/student-store/products/:productId"
 						element={<Product />}
 					/>
-					{/* <Route
-						path="/student-store/products/:productCategory"
+					<Route
+						path="/student-store/products/category/:productCategory"
 						element={<SpecificProduct />}
-					/> */}
+					/>
 				</Routes>
 			</BrowserRouter>
 		</div>

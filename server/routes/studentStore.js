@@ -12,7 +12,7 @@ router.get("/products", async (req, res, next) => {
 		next(err);
 	}
 });
-// get one product
+// get one product by id
 router.get("/products/:productId", async (req, res, next) => {
 	try {
 		const productId = req.params.productId;
@@ -21,6 +21,19 @@ router.get("/products/:productId", async (req, res, next) => {
 			throw new NotFoundError("Product not found");
 		}
 		res.status(200).json({ product });
+	} catch (err) {
+		next(err);
+	}
+});
+// get all product by category
+router.get("/products/category/:productCategory", async (req, res, next) => {
+	try {
+		const productCategory = req.params.productCategory;
+		const products = await StudentStore.fetchProductByCategory(productCategory);
+		if (!products) {
+			throw new NotFoundError("Product not found");
+		}
+		res.status(200).json({ products });
 	} catch (err) {
 		next(err);
 	}

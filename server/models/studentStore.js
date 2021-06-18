@@ -15,6 +15,14 @@ class StudentStore {
 			.value();
 		return product;
 	}
+	// fetch all products by category
+	static async fetchProductByCategory(productCategory) {
+		const products = storage
+			.get("products")
+			.filter({ category: productCategory })
+			.value();
+		return products;
+	}
 
 	static async listUsers() {
 		// list all users in the users array
